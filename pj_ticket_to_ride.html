@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <meta 
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <style>
+        .content figure {
+            margin-left: 0; 
+            margin-right: 0;
+        }
+        a {
+            color: #DB5375;
+        }
+        .hero a {
+            color: #729EA1;
+            text-decoration: underline;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/5087d62e1c.js" crossorigin="anonymous"></script>
+    <title>Jessie Blaeser's Portfolio</title>
+  </head>
+  <body>
+
+    <section class="hero is-danger">
+        <div class="container">
+            <div class="hero-body">
+                <h1 class="title is-1"> <span class="icon-text">
+                    <span class="icon">
+                        <i class="fas fa-pencil-alt"></i>
+                    </span>
+                    </span> Ticket to Ride Analysis</h1>
+                <p class="subtitle is-4">Cracking the European version of the game</p>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container">    
+    <section class="section">
+    <div class="columns is-multiline is-mobile content">
+        <div class='column is is-one-third'>
+            <div class="card-image">
+                <figure class="image is-5by3">
+                  <img src="https://raw.githubusercontent.com/jessieblaeser/website/main/fed_courts_map_screenshot.png" alt="fed_courts_map_screenshot.png">
+                </figure>
+                <a class="button is-warning is-fullwidth" href="https://github.com/jessieblaeser/Federal-Court-Nominees-Scrape-and-Analysis">Read the Code</a>
+              </div>        
+            </div>
+        <div class="column is-two-thirds">
+            <h3 class="title is-4">
+                <a href="https://github.com/jessieblaeser/Federal-Court-Nominees-Scrape-and-Analysis"
+                >Scraping Federal Court Nominees</a>
+            </h3>
+            <p>I built this tool to pull information from the Senate Judiciary Committee website. The code navigates from the committee's homepage to it's past nomination meetings, and dowloads and reads each nominee's S form (a questionnaire). Using regular expressions, exported the following information to a CSV:
+            <ul style=“list-style-type:circle">
+                <li>Name</li>
+                <li>Nominated position</li>
+                <li>Law school</li>
+                <li>Pro bono work experience, which served as my unit of analysis</li>
+            </ul> </p>
+            <p>Using textual analysis, I created categories for the type of (required) pro bono work completed by those appointed to the federal courts. The final output of this project is a GeoJSON choropleth map that displays pro bono work categories by district.
+
+            </p>
+            <div class="tags">
+                <span class="tag is-success is-light is-rounded">Python/Pandas</span>
+                <span class="tag is-link is-light is-rounded">Selenium</span>
+                <span class="tag is-warning is-light is-rounded">Beautiful Soup</span>
+                <span class="tag is-info is-light is-rounded">Regex</span>
+                <span class="tag is-danger is-light is-rounded">PDF Miner</span>
+                <span class="tag is-light is-rounded">MapBox</span>
+            </div>        
+        </div>
+
+        <div class="container">    
+            <section class="section">
+            <div class="columns is-multiline is-mobile content">
+                <div class="column is-two-thirds">
+                    <h3 class="title is-4">
+                        <a href="https://jessieblaeser.github.io/New-York-Abandoned-Oil-Wells/"
+                        >Abandoned but not forgotten: New York’s once-booming oil industry and the wells it left behind</a>
+                    </h3>
+                    <p>New York's oil industry peaked in the late 1800s, when it produced just under <a href="https://www.dec.ny.gov/docs/materials_minerals_pdf/dgeisv1ch4.pdf"
+                        >7 million barrels of oil</a> in a single year. My team and I analyzed data from the Department of Environmental Conservation to find that the former seat of the oil industry in New York State, Allegany County, now has more abandoned and unplugged oil wells than active ones. Statewide, the DEC has over 4,700 wells still in need of plugging. In the meantime, each abandoned and unplugged well poses an environmental threat.
+                    </p>
+                    <div class="tags">
+                        <span class="tag is-success is-light is-rounded">Python/Pandas</span>
+                        <span class="tag is-light is-rounded">DataWrapper</span>
+                    </div>        
+                </div>
+                <div class='column is is-one-third'>
+                    <div class="card-image">
+                        <figure class="image is-5by3">
+                          <img src="https://raw.githubusercontent.com/jessieblaeser/website/main/wells_img1.png" alt="wells_img1.png">
+                        </figure>
+                        <a class="button is-warning is-fullwidth" href="https://jessieblaeser.github.io/New-York-Abandoned-Oil-Wells/">Read the Piece</a>
+                      </div>        
+                </div>
+         </div>
+        </div>
+
+        <div class="container">    
+            <section class="section">
+            <div class="columns is-multiline is-mobile content">
+                <div class='column is is-one-third'>
+                    <div class="card-image">
+                        <figure class="image is-5by4">
+                          <img src="https://raw.githubusercontent.com/jessieblaeser/website/main/IMG_7288.jpeg" alt="IMG_7288.jpeg">
+                        </figure>
+                        <a class="button is-warning is-fullwidth" href="https://github.com/jessieblaeser/Federal-Court-Nominees-Scrape-and-Analysis">Read the Piece</a>
+                      </div>        
+                    </div>
+                <div class="column is-two-thirds">
+                    <h3 class="title is-4">
+                        <a href="https://columbianewsservice.com/2021/10/27/qa-a-food-delivery-worker-organized-to-protect-fellow-workers/"
+                        >Q&A: A Food Delivery Worker Organized to Protect Fellow Workers</a>
+                    </h3>
+                    <h5 class="subtitle is-6">Published via Columbia News Service</h5>
+                    <p>A grassroots org works as an insurance policy of sorts for delivery workers, who count on each other for assistance, if not from officials, from the community.</p>     
+                </div>
