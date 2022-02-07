@@ -49,32 +49,30 @@
                     <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
                     </script>
                 </figure>
-                <a class="button is-warning is-fullwidth" href="https://github.com/jessieblaeser/Federal-Court-Nominees-Scrape-and-Analysis">Read the Code</a>
-              </div>        
-            </div>
+            </div>        
+        </div>
         <div class="column is-two-thirds">
             <h3 class="title is-4">
-                <a href="https://github.com/jessieblaeser/Federal-Court-Nominees-Scrape-and-Analysis"
-                >Scraping Federal Court Nominees</a>
+                >What is Ticket to Ride?
             </h3>
-            <p>I built this tool to pull information from the Senate Judiciary Committee website. The code navigates from the committee's homepage to it's past nomination meetings, and dowloads and reads each nominee's S form (a questionnaire). Using regular expressions, exported the following information to a CSV:
+            <p>The objective of Ticket to Ride is to earn the most points via laying "trains" on pre-determined railroad tracks all over Europe. More specifically, players earn points by: 
             <ul style=“list-style-type:circle">
-                <li>Name</li>
-                <li>Nominated position</li>
-                <li>Law school</li>
-                <li>Pro bono work experience, which served as my unit of analysis</li>
+                <li>Completing “ticket” cards - each player aims to fulfill at least three “tickets,” which direct you from starting points on the board to different endpoints. There are 46 ticket cards in Ticket to Ride: Europe. </li>
+                <li>Building “routes” - each pathway between adjacent cities is called a “route.” Routes are of predetermined length on the board. The longer the route, the more points you earn.</li>
+                <li>Building the longest unbroken train route - players can earn 10 extra points at the end of the game for building the longest unbroken route. This is important because players are not only incentivized to get from point A to point B as efficiently as possible. Taking a more circuitous route could end up earning you more points, but at the risk of failing to fulfill you “ticket” cards.</li>
+                <li>A few other ways that are not as relevant to the analysis below.</li>
             </ul> </p>
-            <p>Using textual analysis, I created categories for the type of (required) pro bono work completed by those appointed to the federal courts. The final output of this project is a GeoJSON choropleth map that displays pro bono work categories by district.
-
+            <h3 class="title is-4">
+                >Why analyze the game?
+            </h3>
+            
+            <p>The original <a href="https://github.com/Rob217/TicketToRideAnalysis.git"
+                >Github Repo</a> (by Rob Bettles) that inspired this project analyzes the United States version of the board. The central goal of Bettles' analysis is the same as the one found in this repo: to determine whether or not particular train routes have a higher probability of being occupied by the end of the game. If certain routes are more likely to be occupied, players might use this information to inform their game strategy.
             </p>
-            <div class="tags">
-                <span class="tag is-success is-light is-rounded">Python/Pandas</span>
-                <span class="tag is-link is-light is-rounded">Selenium</span>
-                <span class="tag is-warning is-light is-rounded">Beautiful Soup</span>
-                <span class="tag is-info is-light is-rounded">Regex</span>
-                <span class="tag is-danger is-light is-rounded">PDF Miner</span>
-                <span class="tag is-light is-rounded">MapBox</span>
-            </div>        
+            <p>The "Europe" version of the game has a few new rules added to the mix, and I’m interested in seeing if they have any impact on the probability of certain routes being taken over the course of the game. 
+            </p>
+            <p>To the left, you can see every city on the Ticket to Ride: Europe Board. Paris is a crucial node in the train network, with 10 total routes going in and out of the city. This also means that Paris is likely to be more crowded than other cities on the map, making it desirable to players aiming to either claim it early or block it from others. Meanwhile, the cities on the edges of the board, while offering fewer routes, are less likely to be taken by the end of the game. Players aiming to create circuitous routes around the board, or who hope to avoid traffic, might opt for these routes. 
+            </p>     
         </div>
 
         <div class="container">    
