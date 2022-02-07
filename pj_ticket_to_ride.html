@@ -53,7 +53,7 @@
         </div>
         <div class="column is-two-thirds">
             <h3 class="title is-4">
-                >What is Ticket to Ride?
+                What is Ticket to Ride?
             </h3>
             <p>The objective of Ticket to Ride is to earn the most points via laying "trains" on pre-determined railroad tracks all over Europe. More specifically, players earn points by: 
             <ul style=“list-style-type:circle">
@@ -63,7 +63,7 @@
                 <li>A few other ways that are not as relevant to the analysis below.</li>
             </ul> </p>
             <h3 class="title is-4">
-                >Why analyze the game?
+                Why analyze the game?
             </h3>
             
             <p>The original <a href="https://github.com/Rob217/TicketToRideAnalysis.git"
@@ -72,7 +72,12 @@
             <p>The "Europe" version of the game has a few new rules added to the mix, and I’m interested in seeing if they have any impact on the probability of certain routes being taken over the course of the game. 
             </p>
             <p>To the left, you can see every city on the Ticket to Ride: Europe Board. Paris is a crucial node in the train network, with 10 total routes going in and out of the city. This also means that Paris is likely to be more crowded than other cities on the map, making it desirable to players aiming to either claim it early or block it from others. Meanwhile, the cities on the edges of the board, while offering fewer routes, are less likely to be taken by the end of the game. Players aiming to create circuitous routes around the board, or who hope to avoid traffic, might opt for these routes. 
-            </p>     
+            </p>
+            
+            <h2 class="title">Analysis</h2>
+            <p>Following Bettles' code almost exactly, I applied Dijkstra's algorithm to the Ticket to Ride board in Python script. In doing so, I was able to determine the shortest route from one node (city) on the board to another. Analysis via NetworkX also allowed me to track the exact route a player would take to move in the most efficient way from each ticket card's origin city to its destination city. </p>
+            <p>In each of the visualizations below, the darker the route between cities, the more ticket cards it contributes to when all players are aiming to create the most efficient routes from their respective ticket cards' origin and destination cities.</p>
+            <p> </p>
         </div>
 
         <div class="container">    
