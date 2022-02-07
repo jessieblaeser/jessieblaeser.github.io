@@ -42,8 +42,7 @@
     <div class="container">    
     <section class="section">
     <div class="columns is-multiline is-mobile content">
-       
-        <div class="column is-full">
+        <div class="column is-two-thirds">
             <h3 class="title is-4">
                 <a href="https://github.com/jessieblaeser/Ticket-to-Ride-Euorpe.git"
                 >What is Ticket to Ride?</a>
@@ -67,19 +66,22 @@
             </p>
             <p>To the left, you can see every city on the Ticket to Ride: Europe Board. Paris is a crucial node in the train network, with 10 total routes going in and out of the city. This also means that Paris is likely to be more crowded than other cities on the map, making it desirable to players aiming to either claim it early or block it from others. Meanwhile, the cities on the edges of the board, while offering fewer routes, are less likely to be taken by the end of the game. Players aiming to create circuitous routes around the board, or who hope to avoid traffic, might opt for these routes. 
             </p>
+            <div class='column is is-one-third'>
+                <div class="card-image">
+                    <figure class="image is-5by3">
+                        <iframe title="Paris has the most routes in and out, but Stockholm has the most valuable route to offer." aria-label="Bar Chart" id="datawrapper-chart-S3CT9" src="https://datawrapper.dwcdn.net/S3CT9/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="1295"></iframe>
+                        <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+                        </script>
+                    </figure>
+                </div>        
+            </div>
             
             <h2 class="title">Analysis</h2>
             <p>Following Bettles' code almost exactly, I applied Dijkstra's algorithm to the Ticket to Ride board in Python script. In doing so, I was able to determine the shortest route from one node (city) on the board to another. Analysis via NetworkX also allowed me to track the exact route a player would take to move in the most efficient way from each ticket card's origin city to its destination city. </p>
             <p>In each of the visualizations below, the darker the route between cities, the more ticket cards it contributes to when players are fulfilleing their respective ticket cards' origin and destination cities.</p>
             <p>But each visualization differs slightly.</p>
             <p>For every ticket card, there are multiple ways to move from Point A, the origin city, to Point B. Each visualization below uses a different number of possibilities a player might take to fulfill their ticket.</p>
-            <div class="card-image">
-                <figure class="image is-5by4">
-                    <img src="plots_ticket/heat_map_5_shortest.png" alt="Visualization of Ticket to Ride: Europe gameboard showing the probability of routes being taken by the end of the game">
-                </figure>
-              </div> 
-            <p>In this scenario, every ticket card has five possible "paths" to get from its origin to its destination. The darker the route, the more likely it is to be taken by a player. We can see that the center of the board has a heavy concentration of darker routes. Not only are these routes more likely to serve as connections on-route to a player's destination, but these routes also tend to be shorter, making them easier to claim.</p>
-        
+            <p> </p>
            
             
         </div>
@@ -88,17 +90,15 @@
             <section class="section">
             <div class="columns is-multiline is-mobile content">
                 <div class="column is-full">
-                   
+                    <div class="card-image">
+                        <figure class="image is-5by4">
+                            <img src="plots_ticket/heat_map_5_shortest.png" alt="Visualization of Ticket to Ride: Europe gameboard showing the probability of routes being taken by the end of the game">
+                        </figure>
+                      </div> 
+                      <p>In this scenario, every ticket card has five possible "paths" to get from its origin to its destination. The darker the route, the more likely it is to be taken by a player. We can see that the center of the board has a heavy concentration of darker routes. Not only are these routes more likely to serve as connections on-route to a player's destination, but these routes also tend to be shorter, making them easier to claim.</p>
+                
 
                 </div>
             </div>
         </div   >
-        <div class='column is is-one-third'>
-            <div class="card-image">
-                <figure class="image is-5by3">
-                    <iframe title="Paris has the most routes in and out, but Stockholm has the most valuable route to offer." aria-label="Bar Chart" id="datawrapper-chart-S3CT9" src="https://datawrapper.dwcdn.net/S3CT9/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="1295"></iframe>
-                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-                    </script>
-                </figure>
-            </div>        
-        </div>
+                   
