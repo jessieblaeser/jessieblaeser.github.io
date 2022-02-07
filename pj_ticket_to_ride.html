@@ -119,11 +119,23 @@
                             <img src="plots_ticket/heat_map_20_shortest.png" alt="Visualization of Ticket to Ride: Europe gameboard showing the probability of routes being taken by the end of the game">
                         </figure>
                       </div> 
-                      <div>
-                        <p>But there are more than just five possible paths per ticket. Here, we are examining the likelihood of routes to be taken out of the 10 shortest possible paths to complete each ticket.</p>
-                        <p>This number is bumped to 10 because perhaps five possible paths isn’t enough. Let’s say you’re trying to get from Palermo, Italy to Moscow, Russia — a ticket worth 21 points. You have many options to make that connection, but with those options come obstacles and decisions.</p>    
-                        <p>For example, what if your desired routes have been blocked by other players? Or, what if you simply want to take the 10th-shortest route rather than the shortest route, opting to go through particular waypoints that fulfill your other ticket cards? This code looks at the 10-shortest possible paths from Palermo to Moscow and weighs each equally. It repeats this same process for each ticket card.</p>
-                        <p>The result is the map above, which shows us, once again, that routes in the middle of the board are more likely to be used over the course of the game.</p>
+                          <p>Now things are a bit unwieldy. The 20th-shortest route to get from Palermo, Italy to Moscow, Russia might not even exist — and if it does, it’s likely just another way to say “the longest route.”</p>
+                          <p>Regardless, this visualization is still helpful in demonstrating the phenomenon at hand: cities in the middle of the board are more useful than those on the outside when a player is optimizing for the shortest route.</p>
+                          <h3 class="title is-4">
+                            Take Aways
+                            <span class="icon-text">
+                                <span class="icon">
+                                    <i class="far fa-edit"></i>
+                                </span>
+                            </h3>
+                            <p>Next time you play Ticket to Ride, keep these keys in mind:
+                                <ul style=“list-style-type:circle">
+                                    <li>The board is most likely to be crowded in the middle.</li>
+                                    <li>This means you can go for the middle early, opting to block it from other players or claim it for your own future use.</li>
+                                    <li>Or, you can steer clear of the middle and prioritize circuitous routes. Choosing pathways along the periphery will help you avoid other players and could help you secure extra points for achieving the longest route.</li>
+                                </ul>
+                            </p>
+                    
                     </div>
                 </div>
             </div>
