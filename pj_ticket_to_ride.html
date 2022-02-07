@@ -42,7 +42,7 @@
     <div class="container">    
     <section class="section">
     <div class="columns is-multiline is-mobile content">
-        <div class="column is-two-thirds">
+        <div class="column is-full">
             <h3 class="title is-4">
                 <a href="https://github.com/jessieblaeser/Ticket-to-Ride-Euorpe.git"
                 >What is Ticket to Ride?</a>
@@ -55,26 +55,29 @@
                 <li>Building the longest unbroken train route - players can earn 10 extra points at the end of the game for building the longest unbroken route. This is important because players are not only incentivized to get from point A to point B as efficiently as possible. Taking a more circuitous route could end up earning you more points, but at the risk of failing to fulfill you “ticket” cards.</li>
                 <li>A few other ways that are not as relevant to the analysis below.</li>
             </ul> </p>
-            <h3 class="title is-4">
-                Why analyze the game?
-            </h3>
-            
-            <p>The original <a href="https://github.com/Rob217/TicketToRideAnalysis.git"
-                >Github Repo</a> (by Rob Bettles) that inspired this project analyzes the United States version of the board. The central goal of Bettles' analysis is the same as the one found in this repo: to determine whether or not particular train routes have a higher probability of being occupied by the end of the game. If certain routes are more likely to be occupied, players might use this information to inform their game strategy.
-            </p>
-            <p>The "Europe" version of the game has a few new rules added to the mix, and I’m interested in seeing if they have any impact on the probability of certain routes being taken over the course of the game. 
-            </p>
-            <p>To the left, you can see every city on the Ticket to Ride: Europe Board. Paris is a crucial node in the train network, with 10 total routes going in and out of the city. This also means that Paris is likely to be more crowded than other cities on the map, making it desirable to players aiming to either claim it early or block it from others. Meanwhile, the cities on the edges of the board, while offering fewer routes, are less likely to be taken by the end of the game. Players aiming to create circuitous routes around the board, or who hope to avoid traffic, might opt for these routes. 
-            </p>
             <div class='column is is-one-third'>
                 <div class="card-image">
-                    <figure class="image is-5by3">
+                    <figure class="image">
                         <iframe title="Paris has the most routes in and out, but Stockholm has the most valuable route to offer." aria-label="Bar Chart" id="datawrapper-chart-S3CT9" src="https://datawrapper.dwcdn.net/S3CT9/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="1295"></iframe>
                         <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
                         </script>
                     </figure>
                 </div>        
             </div>
+            <div class="column is-two-thirds">
+                <h3 class="title is-4">
+                    Why analyze the game?
+                </h3>
+                
+                <p>The original <a href="https://github.com/Rob217/TicketToRideAnalysis.git"
+                    >Github Repo</a> (by Rob Bettles) that inspired this project analyzes the United States version of the board. The central goal of Bettles' analysis is the same as the one found in this repo: to determine whether or not particular train routes have a higher probability of being occupied by the end of the game. If certain routes are more likely to be occupied, players might use this information to inform their game strategy.
+                </p>
+                <p>The "Europe" version of the game has a few new rules added to the mix, and I’m interested in seeing if they have any impact on the probability of certain routes being taken over the course of the game. 
+                </p>
+                <p>To the left, you can see every city on the Ticket to Ride: Europe Board. Paris is a crucial node in the train network, with 10 total routes going in and out of the city. This also means that Paris is likely to be more crowded than other cities on the map, making it desirable to players aiming to either claim it early or block it from others. Meanwhile, the cities on the edges of the board, while offering fewer routes, are less likely to be taken by the end of the game. Players aiming to create circuitous routes around the board, or who hope to avoid traffic, might opt for these routes. 
+                </p>
+            </div>
+            
             
             <h2 class="title">Analysis</h2>
             <p>Following Bettles' code almost exactly, I applied Dijkstra's algorithm to the Ticket to Ride board in Python script. In doing so, I was able to determine the shortest route from one node (city) on the board to another. Analysis via NetworkX also allowed me to track the exact route a player would take to move in the most efficient way from each ticket card's origin city to its destination city. </p>
