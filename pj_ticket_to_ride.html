@@ -87,6 +87,11 @@
                 <p>For every ticket card, there are multiple ways to move from Point A, the origin city, to Point B. Each visualization below uses a different number of possibilities a player might take to fulfill their ticket.</p>
                     
             </div>
+            <div class="card-image">
+                <figure class="image is-5by4">
+                    <img src="plots_ticket/heat_map_5_shortest.png" alt="Visualization of Ticket to Ride: Europe gameboard showing the probability of routes being taken by the end of the game">
+                </figure>
+              </div> 
         </div>
 
             
@@ -94,7 +99,7 @@
             <p>Following Bettles' code almost exactly, I applied Dijkstra's algorithm to the Ticket to Ride board in Python script. In doing so, I was able to determine the shortest route from one node (city) on the board to another. Analysis via NetworkX also allowed me to track the exact route a player would take to move in the most efficient way from each ticket card's origin city to its destination city. </p>
             <p>In each of the visualizations below, the darker the route between cities, the more ticket cards it contributes to when players are fulfilleing their respective ticket cards' origin and destination cities.</p>
             <p>But each visualization differs slightly.</p>
-            <p>For every ticket card, there are multiple ways to move from Point A, the origin city, to Point B. Each visualization below uses a different number of possibilities a player might take to fulfill their ticket.</p>
+            <p>For every ticket card, there are multiple ways to move from Point A, the origin city, to Point B. Each visualization below uses a different number of possibilities each player might use to fulfill their ticket.</p>
             
            
             
