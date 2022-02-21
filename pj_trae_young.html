@@ -69,48 +69,37 @@
                 <li>Danilo Gallinari</li>
                 <li>De’Andre Hunter</li>
             </ul> </p>
-            <p>I’ve assed all possible partnerships between these players, each other and the remaining Hawks roster, according to the 2-player lineups outlined on NBA.com (find out how I scraped NBA.com’s table by reading my code here).</p>
-            <p><ul style=“list-style-type:circle">
-                <li>A 53% increase in assists</li>
-                <li>A 44.9% increase in rebounds</li>
-                <li>A 55.5% increase in points</li>
-            </ul></p>
-            <p>To some degree, the idea that Young would produce higher performance in these categories is unsurprising. He has the highest player efficiency rating on the Hawks, but he is not always the top performer in every single category. When it comes to rebounds, for example, Young averages 3.9 per game, far below Clint Capela’s 10.9 or John Collins’s 7.9.</p>
-            <p>This begs the question: Does Young make his teammates better? When they play with Young, does the ball move faster, do plays get executed with more rigor, do players crash the boards harder, do more shots go up — or are more shots made? </p>
-            <p>There are too many confounding variables to count in this analysis, and the below information just scratches the surface of learning how Young might improve the performance of his fellow Hawks. But it’s worth exploring how he might spread the Hawks ✨magic✨ to see if the data will show what fans see with their own eyes. </p>
-            <div class="card-image">
-                <figure class="image is-5by4">
-                    <img src="trae_and_non_trae.png" alt="Grouped bar chart showing Hawks' 2-player lineups with Young perform better than those without him in points, rebounds and assists.">
-                </figure>
-              </div> 
 
 
 
-              
+
      <div class="container">    
      <section class="section">
         <div class="columns is-multiline is-mobile content">   
             <div class='column is is-one-third'>
                 <div class="card-image">
-                    <figure class="image">
-                        <iframe title="Paris has the most routes in and out, but Stockholm has the most valuable route to offer." aria-label="Bar Chart" id="datawrapper-chart-S3CT9" src="https://datawrapper.dwcdn.net/S3CT9/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="1295"></iframe>
-                        <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-                        </script>
-                    </figure>
-                </div>        
+                <figure class="image is-5by4">
+                    <img src="trae_and_non_trae.png" alt="Grouped bar chart showing Hawks' 2-player lineups with Young perform better than those without him in points, rebounds and assists.">
+                </figure>
+              </div>       
             </div>
             <div class="column is-two-thirds">
                 <h3 class="title is-4">
-                    Why analyze the game?
+                    How do 2-player pairings *with* Young compare to those without him?
                 </h3>
                 
-                <p>The original <a href="https://github.com/Rob217/TicketToRideAnalysis.git"
-                    >Github Repo</a> (by Rob Bettles) that inspired this project analyzes the United States version of the board. The central goal of Bettles' analysis is the same as the one found in this repo: to determine whether or not particular train routes have a higher probability of being occupied by the end of the game. If certain routes are more likely to be occupied, players might use this information to inform their game strategy.
-                </p>
-                <p>The "Europe" version of the game has a few new rules added to the mix, and I’m interested in seeing if they have any impact on the probability of certain routes being taken over the course of the game. 
-                </p>
-                <p>To the left, you can see every city on the Ticket to Ride: Europe Board. Paris is a crucial node in the train network, with 10 total routes going in and out of the city. This also means that Paris is likely to be more crowded than other cities on the map, making it desirable to players aiming to either claim it early or block it from others. Meanwhile, the cities on the edges of the board, while offering fewer routes, are less likely to be taken by the end of the game. Players aiming to create circuitous routes around the board, or who hope to avoid traffic, might opt for these routes. 
-                </p>
+                <p>I’ve assed all possible partnerships between these players, each other and the remaining Hawks roster, according to the 2-player lineups outlined on NBA.com (find out how I scraped NBA.com’s table by reading my code here).</p>
+                <p><ul style=“list-style-type:circle">
+                    <li>A 53% increase in assists</li>
+                    <li>A 44.9% increase in rebounds</li>
+                    <li>A 55.5% increase in points</li>
+                </ul></p>
+                <p>To some degree, the idea that Young would produce higher performance in these categories is unsurprising. He has the highest player efficiency rating on the Hawks, but he is not always the top performer in every single category. When it comes to rebounds, for example, Young averages 3.9 per game, far below Clint Capela’s 10.9 or John Collins’s 7.9.</p>
+                <p>This begs the question: Does Young make his teammates better? When they play with Young, does the ball move faster, do plays get executed with more rigor, do players crash the boards harder, do more shots go up — or are more shots made? </p>
+                <p>There are too many confounding variables to count in this analysis, and the below information just scratches the surface of learning how Young might improve the performance of his fellow Hawks. But it’s worth exploring how he might spread the Hawks ✨magic✨ to see if the data will show what fans see with their own eyes. </p>
+               
+               
+               
                 <h3 class="title">Analysis</h3>
                 <p>Following Bettles' code almost exactly, I applied Dijkstra's algorithm to the Ticket to Ride board in Python script. In doing so, I was able to determine the shortest route from one node (city) on the board to another. Analysis via NetworkX also allowed me to track the exact route a player would take to move in the most efficient way from each ticket card's origin city to its destination city. </p>
                 <p>In each of the visualizations below, the darker the route between cities, the more ticket cards it contributes to when players are fulfilleing their respective ticket cards' origin and destination cities.</p>
