@@ -96,6 +96,10 @@
                     <li>A 44.9% increase in rebounds</li>
                     <li>A 55.5% increase in points</li>
                 </ul></p>
+            </div>
+        </div>
+    </section>
+    </div>
     
     <div class="container">    
         <section class="section">
@@ -109,63 +113,3 @@
         </section>
     </div> 
                
-               
-                <h3 class="title">Analysis</h3>
-                <p>Following Bettles' code almost exactly, I applied Dijkstra's algorithm to the Ticket to Ride board in Python script. In doing so, I was able to determine the shortest route from one node (city) on the board to another. Analysis via NetworkX also allowed me to track the exact route a player would take to move in the most efficient way from each ticket card's origin city to its destination city. </p>
-                <p>In each of the visualizations below, the darker the route between cities, the more ticket cards it contributes to when players are fulfilleing their respective ticket cards' origin and destination cities.</p>
-                <p>But each visualization differs slightly.</p>
-                <p>For every ticket card, there are multiple ways to move from Point A, the origin city, to Point B. Each visualization below uses a different number of possibilities a player might take to fulfill their ticket.</p>
-                    
-            <div class="card-image">
-                <figure class="image is-5by4">
-                    <img src="plots_ticket/heat_map_5_shortest.png" alt="Visualization of Ticket to Ride: Europe gameboard showing the probability of routes being taken by the end of the game">
-                </figure>
-              </div> 
-              <p>In the above scenario, every ticket card has five possible "paths" to get from its origin to its destination. The darker the route, the more likely it is to be taken by a player. We can see that the center of the board has a heavy concentration of darker routes. Not only are these routes more likely to serve as connections on-route to a player's destination, but these routes also tend to be shorter, making them easier to claim.</p>
-         </div> 
-       
-
-
-        <div class="container">    
-            <section class="section">
-            <div class="columns is-multiline is-mobile content">
-                <div class="column is-full">
-                    <div class="card-image">
-                        <figure class="image is-5by4">
-                            <img src="plots_ticket/heat_map_10_shortest.png" alt="Visualization of Ticket to Ride: Europe gameboard showing the probability of routes being taken by the end of the game">
-                        </figure>
-                      </div> 
-                      <div>
-                        <p>But there are more than just five possible paths per ticket. Here, we are examining the likelihood of routes to be taken out of the 10 shortest possible paths to complete each ticket.</p>
-                        <p>This number is bumped to 10 because perhaps five possible paths isn’t enough. Let’s say you’re trying to get from Palermo, Italy to Moscow, Russia — a ticket worth 21 points. You have many options to make that connection, but with those options come obstacles and decisions.</p>    
-                        <p>For example, what if your desired routes have been blocked by other players? Or, what if you simply want to take the 10th-shortest route rather than the shortest route, opting to go through particular waypoints that fulfill your other ticket cards? This code looks at the 10-shortest possible paths from Palermo to Moscow and weighs each equally. It repeats this same process for each ticket card.</p>
-                        <p>The result is the map above, which shows us, once again, that routes in the middle of the board are more likely to be used over the course of the game.</p>
-                
-
-                <div class="column is-full">
-                    <div class="card-image">
-                        <figure class="image is-5by4">
-                            <img src="plots_ticket/heat_map_20_shortest.png" alt="Visualization of Ticket to Ride: Europe gameboard showing the probability of routes being taken by the end of the game">
-                        </figure>
-                      </div> 
-                          <p>Now things are a bit unwieldy. The 20th-shortest route to get from Palermo, Italy to Moscow, Russia might not even exist — and if it does, it’s likely just another way to say “the longest route.”</p>
-                          <p>Regardless, this visualization is still helpful in demonstrating the phenomenon at hand: cities in the middle of the board are more useful than those on the outside when a player is optimizing for the shortest route.</p>
-                          <h3 class="title is-4">
-                            Take Aways
-                            <span class="icon-text">
-                                <span class="icon">
-                                    <i class="far fa-edit"></i>
-                                </span>
-                            </h3>
-                            <p>Next time you play Ticket to Ride, keep these keys in mind:
-                                <ul style=“list-style-type:circle">
-                                    <li>The board is most likely to be crowded in the middle.</li>
-                                    <li>This means you can go for the middle early, opting to block it from other players or claim it for your own future use.</li>
-                                    <li>Or, you can steer clear of the middle and prioritize circuitous routes. Choosing pathways along the periphery will help you avoid other players and could help you secure extra points for achieving the longest route.</li>
-                                </ul>
-                            </p>
-                    
-                    </div>
-                </div>
-            </div>
-        </div   >
