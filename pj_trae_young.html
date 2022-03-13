@@ -19,6 +19,27 @@
             color: #729EA1;
             text-decoration: underline;
         }
+        .row-container {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          width: 100%;
+          gap: 2em;
+        }
+
+        .column-container {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 100%;
+            flex: 1;
+        }
+
+        @media (max-width: 768px) {
+            .row-container {
+                flex-direction: column;
+            }
+        }
+
     </style>
     <script src="https://kit.fontawesome.com/5087d62e1c.js" crossorigin="anonymous"></script>
     <title>Trae Young Hawks Analysis</title>
@@ -120,6 +141,15 @@
                 <figure class="image">
                     <img src="boxplot_reb.png" alt="Box plot showing average assists per game among Hawks' 2-player lineups">
                 </figure>
+                </div>
+
+                <div class="row-container">
+                    <div class="column-container">
+                         This is a column, a chart will go here
+                    </div>
+                    <div class="column-container">
+                        This is another column, a chart will go here
+                    </div>
                 </div>
             </section>
 
