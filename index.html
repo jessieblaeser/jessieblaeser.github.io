@@ -1,20 +1,20 @@
 <!doctype html>
 <html lang='en'>
-  <head>
+
+<head>
     <meta charset='utf-8' />
-    <meta 
-        name="viewport"
-        content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <style>
         .content figure {
-            margin-left: 0; 
+            margin-left: 0;
             margin-right: 0;
         }
+
         a {
             color: #DB5375;
         }
+
         .hero a {
             color: #729EA1;
             text-decoration: underline;
@@ -22,169 +22,280 @@
     </style>
     <script src="https://kit.fontawesome.com/5087d62e1c.js" crossorigin="anonymous"></script>
     <title>Jessie Blaeser's Portfolio</title>
-  </head>
-  <body>
+</head>
 
-    <section class="hero is-danger">
+<body>
+
+    <section class="hero has-background-danger-light">
         <div class="container">
             <div class="hero-body">
-                <h1 class="title is-1"> <span class="icon-text">
-                    <span class="icon">
-                        <i class="fas fa-pencil-alt"></i>
+                <h1 class="title is-1">
+                    <span class="icon-text">
+                        <span class="icon">
+                            <i class="fas fa-pencil-alt"></i>
+                        </span>
+                    </span> Hi, I'm Jessie!
+                </h1>
+                <p class="subtitle is-4">I am a multimedia data journalist currently studying at the Columbia Graduate
+                    School of Journalism. You can contact me at <span class="icon-text">
+                        <span class="icon">
+                            <i class="far fa-paper-plane"></i>
+                        </span>
+                        <span> <a href="mailto:jtb2183@columbia.edu">jtb2183@columbia.edu</a></span>
                     </span>
-                    </span> Hi, I'm Jessie!</h1>
-                <p class="subtitle is-4">I am a multimedia data journalist currently studying at the Columbia Graduate School of Journalism. You can contact me at <span class="icon-text">
-                    <span class="icon">
-                        <i class="far fa-paper-plane"></i>
+                    <br>
+                    <span class="icon-text">
+
+                        <span class="icon is-large">
+                            <a href="https://github.com/jessieblaeser"> <i class="fab fa-lg fa-github"></i></a>
+                        </span>
                     </span>
-                    <span> <a href="mailto:jtb2183@columbia.edu">jtb2183@columbia.edu</a></span>
+
+                    <span class="icon-text ">
+                        <span class="icon is-large">
+                            <a href= "https://www.linkedin.com/in/jessieblaeser/"> <i class="fab fa-lg fa-linkedin"></i></a>
+                        </span>
                     </span>
+                    <span class="icon-text">
+                        <span class="icon is-large">
+                            <a href="mailto:jtb2183@columbia.edu"> <i class="far fa-lg fa-envelope"></i></a>
+                        </span>
+                        </span>
+
+                     
+
+                        
+
+                    
+                    
                 </p>
             </div>
         </div>
     </section>
-  
 
-    <div class="container">    
-    <section class="section">
-    <div class="columns is-multiline is-mobile content">
-        <div class='column is is-one-third'>
-            <div class="card-image">
-                <figure class="image is-5by3">
-                  <img src="https://raw.githubusercontent.com/jessieblaeser/website/main/fed_courts_map_screenshot.png" alt="fed_courts_map_screenshot.png">
-                </figure>
-                <a class="button is-warning is-fullwidth" href="https://github.com/jessieblaeser/Federal-Court-Nominees-Scrape-and-Analysis">Read the Code</a>
-              </div>        
-            </div>
-        <div class="column is-two-thirds">
-            <h3 class="title is-4">
-                <a href="https://github.com/jessieblaeser/Federal-Court-Nominees-Scrape-and-Analysis"
-                >Scraping Federal Court Nominees</a>
-            </h3>
-            <p>I built this tool to pull information from the Senate Judiciary Committee website. The code navigates from the committee's homepage to it's past nomination meetings, and dowloads and reads each nominee's S form (a questionnaire). Using regular expressions, exported the following information to a CSV:
-            <ul style=“list-style-type:circle">
-                <li>Name</li>
-                <li>Nominated position</li>
-                <li>Law school</li>
-                <li>Pro bono work experience, which served as my unit of analysis</li>
-            </ul> </p>
-            <p>Using textual analysis, I created categories for the type of (required) pro bono work completed by those appointed to the federal courts. The final output of this project is a GeoJSON choropleth map that displays pro bono work categories by district.
 
-            </p>
-            <div class="tags">
-                <span class="tag is-success is-light is-rounded">Python/Pandas</span>
-                <span class="tag is-link is-light is-rounded">Selenium</span>
-                <span class="tag is-warning is-light is-rounded">Beautiful Soup</span>
-                <span class="tag is-info is-light is-rounded">Regex</span>
-                <span class="tag is-danger is-light is-rounded">PDF Miner</span>
-                <span class="tag is-light is-rounded">MapBox</span>
-            </div>        
-        </div>
-
-        <div class="container">    
-            <section class="section">
-            <div class="columns is-multiline is-mobile content">
-                <div class="column is-two-thirds">
-                    <h3 class="title is-4">
-                        <a href="https://jessieblaeser.github.io/New-York-Abandoned-Oil-Wells/"
-                        >Abandoned but not forgotten: New York’s once-booming oil industry and the wells it left behind</a>
-                    </h3>
-                    <p>New York's oil industry peaked in the late 1800s, when it produced just under <a href="https://www.dec.ny.gov/docs/materials_minerals_pdf/dgeisv1ch4.pdf"
-                        >7 million barrels of oil</a> in a single year. My team and I analyzed data from the Department of Environmental Conservation to find that the former seat of the oil industry in New York State, Allegany County, now has more abandoned and unplugged oil wells than active ones. Statewide, the DEC has over 4,700 wells still in need of plugging. In the meantime, each abandoned and unplugged well poses an environmental threat.
-                    </p>
-                    <div class="tags">
-                        <span class="tag is-success is-light is-rounded">Python/Pandas</span>
-                        <span class="tag is-light is-rounded">DataWrapper</span>
-                    </div>        
-                </div>
-                <div class='column is is-one-third'>
-                    <div class="card-image">
-                        <figure class="image is-5by3">
-                          <img src="https://raw.githubusercontent.com/jessieblaeser/website/main/wells_img1.png" alt="wells_img1.png">
-                        </figure>
-                        <a class="button is-warning is-fullwidth" href="https://jessieblaeser.github.io/New-York-Abandoned-Oil-Wells/">Read the Piece</a>
-                      </div>        
-                </div>
-         </div>
-        </div>
-
-        <div class="container">    
-            <section class="section">
+    <div class="container">
+        <section class="section">
             <div class="columns is-multiline is-mobile content">
                 <div class='column is is-one-third'>
-                    <div class="card-image">
-                        <figure class="image is-5by4">
-                          <img src="https://raw.githubusercontent.com/jessieblaeser/website/main/IMG_7288.jpeg" alt="IMG_7288.jpeg">
-                        </figure>
-                        <a class="button is-warning is-fullwidth" href="https://github.com/jessieblaeser/Federal-Court-Nominees-Scrape-and-Analysis">Read the Piece</a>
-                      </div>        
-                    </div>
-                <div class="column is-two-thirds">
-                    <h3 class="title is-4">
-                        <a href="https://columbianewsservice.com/2021/10/27/qa-a-food-delivery-worker-organized-to-protect-fellow-workers/"
-                        >Q&A: A Food Delivery Worker Organized to Protect Fellow Workers</a>
-                    </h3>
-                    <h5 class="subtitle is-6">Published via Columbia News Service</h5>
-                    <p>A grassroots org works as an insurance policy of sorts for delivery workers, who count on each other for assistance, if not from officials, from the community.</p>     
-                </div>
 
-                <div class="container">    
-                  <section class="section">
-                  <div class="columns is-multiline is-mobile content">
-                      <div class="column is-two-thirds">
-                          <h3 class="title is-4">
-                              <a href="https://jessieblaeser.github.io/pj_ticket_to_ride.html"
-                              >Ticket to Ride: Europe Analysis</a>
-                          </h3>
-                          <p>What is Ticket to Ride, you say? Imagine Settlers of Catan, but with more public transit and less sheep. In this project, I visualize the most likely routes to be taken by players over the course of the game.
-      
-                          </p>
-                          <p>By applying probability measures and Dijkstra's algorithm in python (all inspired and assisted by an <a href="https://github.com/Rob217/TicketToRideAnalysis.git"
-                            >analysis of the original Ticket to Ride: USA board)</a>), I created heatmap visualizations using matplotlib that help demonstrate different strategies a player might take in order to win. All aboard!</p>
-                          <div class="tags">
-                              <span class="tag is-success is-light is-rounded">Python/Pandas</span>
-                              <span class="tag is-light is-rounded">DataWrapper</span>
-                              <span class="tag is-info is light is-rounded">APIs</span>
-                              <span class="tag is-light is-rounded">MapBox</span>
-
-
-                          </div>        
-                      </div>
-                      <div class='column is is-one-third'>
-                          <div class="card-image">
-                              <figure class="image is-5by3">
-                                <img src="plots_ticket/heat_map_5_shortest.png" alt="Visualization of Ticket to Ride: Europe gameboard showing the probability of routes being taken by the end of the game">
-                              </figure>
-                              <a class="button is-warning is-fullwidth" href="https://github.com/jessieblaeser/Ticket-to-Ride-Euorpe.git">Read the Code</a>
-                            </div>        
-                      </div>
-               </div>
-              </div>
-
-              <div class="container">    
-                <section class="section">
-                <div class="columns is-multiline is-mobile content">
-                    <div class='column is is-one-third'>
+                    <div class="card">
                         <div class="card-image">
-                            <figure class="image is-5by4">
-                              <img src="https://raw.githubusercontent.com/jessieblaeser/website/main/trae_and_non_trae.png" alt="trae_and_non_trae.png">
+                            <figure">
+                                <img src="https://raw.githubusercontent.com/jessieblaeser/website/main/trae_and_non_trae.png"
+                                    alt="trae_and_non_trae.png">
+                                </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media-content">
+                                <p class="title is-4">How much
+                                    better does Trae Young actually make his teammates?</p>
+                                <p class="subtitle is-6">Two-time NBA All Star is known for his finess on the court. I
+                                    used player data to measure Young's impact on the Hawks he plays with most often.
+                                </p>
+                            </div>
+                            <br>
+                            <div class="tags">
+                                <span class="tag is-success is-light is-rounded">Python/Pandas</span>
+                                <span class="tag is-warning is-light is-rounded">Beautiful Soup</span>
+                                <span class="tag is-light is-rounded">GGPlot/Plotnine</span>
+                                <span class="tag is-info is light is-rounded">APIs</span>
+                                <span class="tag is-light is-rounded">MapBox</span>
+                            </div>
+
+                        </div>
+                        <footer class="card-footer">
+                            <a href="#" class="card-footer-item">Story</a>
+                            <a href="https://github.com/jessieblaeser/Trae-Young-Impact.git"
+                                class="card-footer-item">Code</a>
+
+
+                        </footer>
+
+
+                    </div>
+                    <br>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-5by3">
+                                <img src="https://raw.githubusercontent.com/jessieblaeser/website/main/wells_img1.png"
+                                    alt="wells_img1.png">
                             </figure>
-                            <a class="button is-warning is-fullwidth" href="https://github.com/jessieblaeser/Trae-Young-Impact.git">Read the Code</a>
-                          </div>        
+                        </div>
+                        <div class="card-content">
+                            <div class="media-content">
+                                <p class="title is-4"><a
+                                        href="https://jessieblaeser.github.io/New-York-Abandoned-Oil-Wells/">Abandoned
+                                        but not forgotten: New York’s once-booming oil industry and the wells it left
+                                        behind</a></p>
+                                <p class="subtitle is-6">Using over a century's worth of data, my team and I found
+                                    thousands of abandoned oil wells have yet to be plugged in New York, each
+                                    representing an environmental threat. </p>
+                            </div>
+                            <br>
+                            <div class="tags">
+                                <span class="tag is-success is-light is-rounded">Python/Pandas</span>
+                                <span class="tag is-light is-rounded">DataWrapper</span>
+                            </div>
+
+                        </div>
+                        <footer class="card-footer">
+                            <a href="https://jessieblaeser.github.io/New-York-Abandoned-Oil-Wells/"
+                                class="card-footer-item">Story</a>
+                            <a href="https://github.com/ilenapeng/wells" class="card-footer-item">Code</a>
+                        </footer>
                     </div>
-                    <div class="column is-two-thirds">
-                        <h3 class="title is-4">
-                            <a href="https://jessieblaeser.github.io/pj_trae_young.html"
-                            >How much better does Trae Young actually make his teammates?</a>
-                        </h3>
-                        <p>Since joining the Hawks in 2018, Young has brought new life to the Atlanta team. Never failing to entertain, Young has redefined confidence on the court, and as a 2-time NBA All-Star, he boasts the highest efficiency rating of any Hawks player. The question is, does that efficiency rub off? And if so, by how much?</p>
-                        <div class="tags">
-                            <span class="tag is-success is-light is-rounded">Python/Pandas</span>
-                            <span class="tag is-warning is-light is-rounded">Beautiful Soup</span>
-                            <span class="tag is-light is-rounded">GGPlot/Plotnine</span>
-                            <span class="tag is-info is light is-rounded">APIs</span>
-                            <span class="tag is-light is-rounded">MapBox</span>
-                        </div>        
+
+                </div>
+
+
+
+
+
+                <div class='column is is-one-third'>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <figure">
+                                <img src="https://raw.githubusercontent.com/jessieblaeser/website/main/pipeline_map.png"
+                                    alt="Pipeline incident map, 2010 to present">
+                                </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media-content">
+                                <p class="title is-4">Most expensive pipeline incidents</p>
+                                <p class="subtitle is-6">Material failures are the root cause of the country's most
+                                    expensive pipeline incidents from 2010 to today.</p>
+                            </div>
+                            <br>
+                            <div class="tags">
+                                <span class="tag is-success is-light is-rounded">Python/Pandas</span>
+                                <span class="tag is-light is-rounded">QGIS</span>
+                                <span class="tag is-info is-light is-rounded">HTML</span>
+                                <span class="tag is-danger is-light is-rounded">Illustrator</span>
+                            </div>
+
+                        </div>
+                        <footer class="card-footer">
+                            <a href="#" class="card-footer-item">Story and code coming soon</a>
+
+
+
+                        </footer>
+
+
                     </div>
-             </div>
+
+                    <br>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-5by3">
+                                <img src="https://raw.githubusercontent.com/jessieblaeser/website/main/fed_courts_map_screenshot.png"
+                                    alt="fed_courts_map_screenshot.png">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media-content">
+                                <p class="title is-4">Federal Court Nominees' Pro Bono Work</p>
+                                <p class="subtitle is-6">Scrapping, categorizing and mapping judicial nominees by
+                                    the
+                                    pro bono work they completed prior to nomination.</p>
+                            </div>
+                            <br>
+                            <div class="tags">
+                                <span class="tag is-success is-light is-rounded">Python/Pandas</span>
+                                <span class="tag is-link is-light is-rounded">Selenium</span>
+                                <span class="tag is-warning is-light is-rounded">Beautiful Soup</span>
+                                <span class="tag is-info is-light is-rounded">Regex</span>
+                                <span class="tag is-danger is-light is-rounded">PDF Miner</span>
+                                <span class="tag is-light is-rounded">MapBox</span>
+                            </div>
+
+                        </div>
+                        <footer class="card-footer">
+                            <a href="#" class="card-footer-item">Story</a>
+                            <a href="https://github.com/jessieblaeser/Federal-Court-Nominees-Scrape-and-Analysis"
+                                class="card-footer-item">Code</a>
+
+
+                        </footer>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class='column is is-one-third'>
+
+                    <div class="card">
+                        <div class="image">
+                            <figure class="image">
+                                <img src="https://raw.githubusercontent.com/jessieblaeser/website/main/IMG_7288.jpeg"
+                                    alt="IMG_7288.jpeg">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media-content">
+                                <p class="title is-4"> <a
+                                        href="https://columbianewsservice.com/2021/10/27/qa-a-food-delivery-worker-organized-to-protect-fellow-workers/">Q&A:
+                                        A Food Delivery Worker Organized to Protect Fellow Workers</a></p>
+                                <p class="subtitle is-6">A grassroots org works as an insurance policy of sorts for
+                                    delivery workers, who
+                                    count on each other for assistance, if not from officials, from the community.</p>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="https://columbianewsservice.com/2021/10/27/qa-a-food-delivery-worker-organized-to-protect-fellow-workers/"
+                                class="card-footer-item">Story</a>
+                        </footer>
+
+
+                    </div>
+
+
+                    <br>
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-5by3">
+                                <img src="plots_ticket/heat_map_5_shortest.png"
+                                    alt="Visualization of Ticket to Ride: Europe gameboard showing the probability of routes being taken by the end of the game">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media-content">
+                                <p class="title is-4"><a
+                                        href="https://jessieblaeser.github.io/pj_ticket_to_ride.html">Ticket
+                                        to Ride: Europe Analysis</a></p>
+                                <p class="subtitle is-6">What is Ticket to Ride, you say? Imagine Settlers of Catan, but
+                                    with more
+                                    public transit and less sheep. In this project, I visualize the most
+                                    likely routes to be taken by players over the course of the game.</p>
+                            </div>
+                            <br>
+                            <div class="tags">
+                                <span class="tag is-success is-light is-rounded">Python/Pandas</span>
+                                <span class="tag is-light is-rounded">DataWrapper</span>
+                                <span class="tag is-info is light is-rounded">APIs</span>
+                                <span class="tag is-light is-rounded">MatPlotLib</span>
+                            </div>
+
+                        </div>
+                        <footer class="card-footer">
+                            <a href="#" class="card-footer-item">Story</a>
+                            <a href="https://github.com/jessieblaeser/Ticket-to-Ride-Euorpe.git"
+                                class="card-footer-item">Code</a>
+
+
+                        </footer>
+
+
+                    </div>
+                </div>
+
             </div>
+        </section>
