@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <style>
+        .content figure {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        a {
+            color: #DB5375;
+        }
+
+        .hero a {
+            color: #729EA1;
+            text-decoration: underline;
+        }
+
+        .row-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            gap: 2em;
+        }
+
+        .column-container {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 100%;
+            flex: 1;
+        }
+
+        @media (max-width: 768px) {
+            .row-container {
+                flex-direction: column;
+            }
+        }
+
+        #scrolly {
+        position: relative;
+        padding: 1rem;
+      }
+
+      .scrolly-overlay {
+        position: relative;
+        padding: 0;
+        max-width: 35rem;
+        margin: 0 auto;
+      }
+
+      .sticky-thing {
+        position: -webkit-sticky;
+        position: sticky;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        z-index: 0;
+        top: 0;
+        height: 100vh;
+        /* Center everything inside */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .step {
+        margin: 0 auto 2rem auto;
+        margin-bottom: 25rem;
+        background-color: #eee;
+        background-color: #fff;
+        color: black;
+      }
+
+      .step p {
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.25rem;
+      }
+
+      .hidden { visibility: hidden; }
+
+      /* When it's less than 700 pixels wide, do normal scrollytelling */
+      @media only screen and (min-width: 700px) {
+        #scrolly.side-by-side {
+          display: flex;
+        }
+
+        #scrolly.side-by-side > div {
+          flex-basis: 0;
+          flex-grow: 1;
+          flex-shrink: 1;
+          padding: 0.75em;
+        }
+
+        #scrolly.side-by-side .scrolly-overlay {
+          margin-top: 70vh;
+          order: 0;
+          /* Change these to adjust sizing options */
+          min-width: 15rem;
+          max-width: 20rem;
+        }
+
+        #scrolly.side-by-side .sticky-thing {
+          order: 1;
+          flex-grow: 2;
+        }
+      }
+        
+    </style>
+    <script src="https://kit.fontawesome.com/5087d62e1c.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/3.0.4/scrollama.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"></script>
+    <title>Dams in Georgia</title>
+    <meta property="og:title" content="A closer look at dams in Georgia">
+    <meta property="og:description" content="Georgia's dam infrastructure poses a threat to those living close by.">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://raw.githubusercontent.com/jessieblaeser/website/main/gadams_sample.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@jtblaeser">
+</head>
+
+<body>
+
+    <section class="hero has-background-danger-light">
+        <div class="container">
+            <div class="hero-body">
+                <h1 class="title is-1">
+                    </span>Georgia has the highest concentration of high-risk and poor quality dams of any state</h1>
+                <p class="subtitle is-4">🦫 Georgia's dam infrastructure poses a threat to those living close by</p>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container">
+        <section class="section">
+            <div class="columns is-multiline is-mobile content">
+                <div class="column is-full">
+                    <p>Right now, this is a space to practice scrollytelling, but it will eventually be a fully-reported piece.</p>
+                    <p>Below, you will see data from the <a href="https://nid.sec.usace.army.mil/#/">National Inventory of Dams</a>, which documents all of the known dams in the country.</p>
+                    <p>Georgia is home to over 5,500 dams, the fifth-most in the country.</p>
+
+
+                    
+                      <body>
+                        <h1>A closer look at the dams in Georgia</h1>
+                          <section id="scrolly">
+                            <div class="sticky-thing">
+                              <div class="ai2html-container">
+                    
+                    <!-- ai2html goes below this line -->
+                    
+                    
+
+
+<!-- Generated by ai2html v0.106.0 - 2022-04-17 01:37 -->
+<!-- ai file: georgia_dams_41722.ai -->
+<style media="screen,print">
+	#g-georgia_dams_41722-box ,
+	#g-georgia_dams_41722-box .g-artboard {
+		margin:0 auto;
+	}
+	#g-georgia_dams_41722-box p {
+		margin:0;
+	}
+	#g-georgia_dams_41722-box .g-aiAbs {
+		position:absolute;
+	}
+	#g-georgia_dams_41722-box .g-aiImg {
+		position:absolute;
+		top:0;
+		display:block;
+		width:100% !important;
+	}
+	#g-georgia_dams_41722-box .g-aiSymbol {
+		position: absolute;
+		box-sizing: border-box;
+	}
+	#g-georgia_dams_41722-box .g-aiPointText p { white-space: nowrap; }
+	#g-georgia_dams_41722-Artboard_2 {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-georgia_dams_41722-Artboard_3 {
+		position:relative;
+		overflow:hidden;
+	}
+
+</style>
+
+<div id="g-georgia_dams_41722-box" class="ai2html">
+
+	<!-- Artboard: Artboard_2 -->
+	<div id="g-georgia_dams_41722-Artboard_2" class="g-artboard" style="width:700px; height:500px;" data-aspect-ratio="1.4" data-min-width="700">
+<div style=""></div>
+		<img id="g-georgia_dams_41722-Artboard_2-img" class="g-aiImg" alt="" src="georgia_dams_41722-Artboard_2.png"/>
+	</div>
+
+	<!-- Artboard: Artboard_3 -->
+	<div id="g-georgia_dams_41722-Artboard_3" class="g-artboard" style="max-width: 375px;max-height: 400px" data-aspect-ratio="0.938" data-min-width="0" data-max-width="699">
+<div style="padding: 0 0 106.6667% 0;"></div>
+		<img id="g-georgia_dams_41722-Artboard_3-img" class="g-aiImg" alt="" src="georgia_dams_41722-Artboard_3.png"/>
+	</div>
+
+</div>
+
+<!-- End ai2html - 2022-04-17 01:37 -->
+
+
+                    
+                  
+                    <!-- End ai2html - 2022-04-03 23:03 -->
+                    
+                    
+                    
+                    
+                    
+                    <!-- ai2html goes above this line -->
+                    
+                </div>
+            </div>
+    
+            <div class="scrolly-overlay">
+              <div class="step" id="step-zero">
+                <p>There are 5,533 recorded <span style="color:#9a617f">dams</span> in Georgia.</p>
+              </div>
+              <div class="step" id="step-one">
+                  <p>High risk, or <span style="color:#eca21f">"Category I,"</span> dams are ones where failure would likely result in the <span style="color:#eca21f">loss of human life.</span></p>
+              </div>
+              <div class="step" id="step-two">
+                    <p>Georgia has the highest concentration of <span style="color:#d8585c">high-risk dams in poor condition</span> in the country. "Poor" condition means during the dam’s most recent inspection, a certified engineer identified deficiencies in the structure. State law requires these dams to be repaired.</p>
+              </div>
+              <div class="step" id="step-three">
+                <p>These dams are owned by HOA’s, local Soil & Water Conservation Districts, private citizens and more. Repairs can easily exceed a million dollars — typically beyond the budget of many of these organizations and individuals.</p>
+              </div>
+              <div class="step" id="step-four">
+                <p>At least 17 dams in Georgia have no owner of record. There are only two other dams in the country with no owner of record listed in the National Inventory of dams.</p>
+              <div class="step" id="step-five">
+                <p>These dams are owned by HOA’s, local Soil & Water Conservation Districts, private citizens and more. Repairs can easily exceed a million dollars — typically beyond the budget of many of these organizations and individuals.</p>
+              </div>
+            </div>
+          </section>
+    
+        <script>
+          
+          /* Scrollytelling code goes under here */
+        
+    
+    
+          // Map Key: path1, text1, path2, text2, path3, text3
+          // group 1: high_poor
+          // group 2: unrated
+          // group 3: other
+          d3.select("#path1").classed('hidden', true)
+          d3.select("#text1").classed('hidden', true)
+          d3.select("#path2").classed('hidden', true)
+          d3.select("#text2").classed('hidden', true)
+          d3.select("#path3").classed('hidden', true)
+          d3.select("#text3").classed('hidden', true)
+          d3.selectAll("path")
+                  .attr("fill","#8b9496")
+          d3.selectAll("path")
+                  .attr("fill-opacity","50%")
+    
+          d3.select("#step-zero").on('stepin', function(e) {
+            console.log("Got to step zero")
+          // Undo changes from step one 
+          d3.select("#path1").classed('hidden', true)
+          d3.select("#text1").classed('hidden', true)
+          d3.select("#path2").classed('hidden', true)
+          d3.select("#text2").classed('hidden', true)
+          d3.select("#path3").classed('hidden', true)
+          d3.select("#text3").classed('hidden', true)
+          d3.selectAll("[data-name='high_poor']").selectAll("path")
+                  .attr("stroke","none")
+          d3.selectAll("path")
+                  .attr("fill","#8b9496")
+          d3.selectAll("path")
+                  .attr("fill-opacity","50%")
+          })
+    
+          d3.select("#step-one").on('stepin', function(e) {
+            console.log("Got to step one")
+          
+          // Undo changes from step two 
+          d3.selectAll("[data-name='unrated']").selectAll("path")
+                  .attr("fill-opacity","30%")
+    
+          // Do changes for step one
+            d3.selectAll("[data-name='high_poor']").selectAll("path")
+                  .attr("fill","#fa260a")
+           
+            d3.selectAll("[data-name='high_poor']").selectAll("path")
+                  .attr("fill-opacity","100%")
+            d3.selectAll("[data-name='unrated']").selectAll("path")
+                  .attr("fill-opacity","20%")
+            d3.select("#other").selectAll("path")
+                  .attr("fill-opacity","20%")
+            d3.select("#path1").classed('hidden', false).attr("fill","#fa260a")
+            d3.select("#text1").classed('hidden', false)
+          })
+    
+          d3.select("#step-two").on('stepin', function(e) {
+            console.log("Got to step two")
+    
+              // undo changes from step one
+            d3.selectAll("[data-name='high_poor']").selectAll("path")
+                  .attr("stroke","none")
+            d3.select("#high_poor").selectAll("path")
+                  .attr("fill-opacity","50%")
+            
+            // do changes from step two 
+            d3.selectAll("[data-name='unrated']").selectAll("path")
+                  .attr("fill","#eaa72a")
+            
+            d3.select("#path2").classed('hidden', false).attr("fill","#eaa72a")
+            d3.select("#text2").classed('hidden', false)
+            
+            d3.selectAll("[data-name='unrated']").selectAll("path")
+                  .attr("fill-opacity","70%")
+           
+          })
+    
+          d3.select("#step-three").on('stepin', function(e) {
+    
+            // undo changes from step two 
+            d3.selectAll("[data-name='unrated']").selectAll("path")
+                  .attr("fill-opacity","30%")
+            
+            // do changes for step 3 
+        
+            d3.select("#other").selectAll("path")
+                  .attr("fill-opacity","20%")
+    
+          })
+         // d3.selectAll("[data-name='high_poor']").stlye('fill', 'black')
+          //d3.selectAll("[data-name='unrated']").stlye('fill', 'black')
+         // d3.selectAll("[data-name='other']").stlye('fill', 'black')
+    
+    
+    
+    
+    
+        </script>
+    
+    <script>
+        const scroller = scrollama();
+    
+        scroller
+            .setup({
+                step: "#scrolly .scrolly-overlay .step",
+                offset: 0.75,
+                debug: false
+            })
+            .onStepEnter(function({ element, index, direction}) {
+                const event = new CustomEvent('stepin', { detail: { direction: direction } })
+                element.dispatchEvent(event);
+            })
+            .onStepExit(function({ element, index, direction }) {
+                const event = new CustomEvent('stepout', { detail: { direction: direction } })
+                element.dispatchEvent(event);
+            });
+    
+        window.addEventListener("resize", scroller.resize);
+        </script>
+    
+    
+        <!-- ai2html resizer script -->
+    
+    <script type="text/javascript">
+      (function() {
+          // only want one resizer on the page
+          if (document.documentElement.className.indexOf("g-resizer-v3-init") > -1) return;
+          document.documentElement.className += " g-resizer-v3-init";
+          // require IE9+
+          if (!("querySelector" in document)) return;
+          function resizer() {
+              var elements = Array.prototype.slice.call(document.querySelectorAll(".g-artboard[data-min-width]")),
+                  widthById = {};
+              elements.forEach(function(el) {
+                  var parent = el.parentNode,
+                      width = widthById[parent.id] || parent.getBoundingClientRect().width,
+                      minwidth = el.getAttribute("data-min-width"),
+                      maxwidth = el.getAttribute("data-max-width");
+                  widthById[parent.id] = width;
+    
+                  if (+minwidth <= width && (+maxwidth >= width || maxwidth === null)) {
+                      el.style.display = "block";
+                  } else {
+                      el.style.display = "none";
+                  }
+              });
+              try {
+                  if (window.parent && window.parent.$) {
+                      window.parent.$("body").trigger("resizedcontent", [window]);
+                  }
+                  if (window.require) {
+                      require(['foundation/main'], function() {
+                          require(['shared/interactive/instances/app-communicator'], function(AppCommunicator) {
+                              AppCommunicator.triggerResize();
+                          });
+                      });
+                  }
+              } catch(e) { console.log(e); }
+          }
+    
+          document.addEventListener('DOMContentLoaded', resizer);
+          // feel free to replace throttle with _.throttle, if available
+          window.addEventListener('resize', throttle(resizer, 200));        
+    
+          function throttle(func, wait) {
+              // from underscore.js
+              var _now = Date.now || function() { return new Date().getTime(); },
+                  context, args, result, timeout = null, previous = 0;
+              var later = function() {
+                  previous = _now();
+                  timeout = null;
+                  result = func.apply(context, args);
+                  if (!timeout) context = args = null;
+              };
+              return function() {
+                  var now = _now(), remaining = wait - (now - previous);
+                  context = this;
+                  args = arguments;
+                  if (remaining <= 0 || remaining > wait) {
+                      if (timeout) {
+                          clearTimeout(timeout);
+                          timeout = null;
+                      }
+                      previous = now;
+                      result = func.apply(context, args);
+                      if (!timeout) context = args = null;
+                  } else if (!timeout && options.trailing !== false) {
+                      timeout = setTimeout(later, remaining);
+                  }
+                  return result;
+              };
+          }
+    
+         
+      })();
+    </script>
+    
+      </body>
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+</div>
+</section>
+</div>       
