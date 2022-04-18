@@ -1,0 +1,16 @@
+{	
+	"fonts": [
+        {
+            "aifont": "PTSans-CaptionBold",
+            "family": "PT Sans",
+            "weight": "700",
+            "style": ""
+        },
+        {
+            "aifont": "PTSans-Caption",
+            "family": "PT Sans",
+            "weight": "400",
+            "style": ""
+        }
+    ]
+}
