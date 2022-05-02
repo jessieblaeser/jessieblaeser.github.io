@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Book lending at Paris's Famous Shakespeare & Co. Bookstore</title>
+    <meta property="og:title" content="Book lending at Paris's Shakespeare & Co. Bookstore">
+    <meta property="og:description"
+        content="These were the most popular during the famous bookstore's early years.">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://raw.githubusercontent.com/jessieblaeser/website/main/pipeline_sample.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@jtblaeser">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <style>
+        .content figure {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        a {
+            color: #DB5375;
+        }
+
+        .hero a {
+            color: #729EA1;
+            text-decoration: underline;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/5087d62e1c.js" crossorigin="anonymous"></script>
+
+
+
+
+    <script type="text/javascript">
+        (function () {
+            // only want one resizer on the page
+            if (document.documentElement.className.indexOf("g-resizer-v3-init") > -1) return;
+            document.documentElement.className += " g-resizer-v3-init";
+            // require IE9+
+            if (!("querySelector" in document)) return;
+            function resizer() {
+                var elements = Array.prototype.slice.call(document.querySelectorAll(".g-artboard[data-min-width]")),
+                    widthById = {};
+                elements.forEach(function (el) {
+                    var parent = el.parentNode,
+                        width = widthById[parent.id] || parent.getBoundingClientRect().width,
+                        minwidth = el.getAttribute("data-min-width"),
+                        maxwidth = el.getAttribute("data-max-width");
+                    widthById[parent.id] = width;
+
+                    if (+minwidth <= width && (+maxwidth >= width || maxwidth === null)) {
+                        el.style.display = "block";
+                    } else {
+                        el.style.display = "none";
+                    }
+                });
+                try {
+                    if (window.parent && window.parent.$) {
+                        window.parent.$("body").trigger("resizedcontent", [window]);
+                    }
+                    if (window.require) {
+                        require(['foundation/main'], function () {
+                            require(['shared/interactive/instances/app-communicator'], function (AppCommunicator) {
+                                AppCommunicator.triggerResize();
+                            });
+                        });
+                    }
+                } catch (e) { console.log(e); }
+            }
+
+            document.addEventListener('DOMContentLoaded', resizer);
+            // feel free to replace throttle with _.throttle, if available
+            window.addEventListener('resize', throttle(resizer, 200));
+
+            function throttle(func, wait) {
+                // from underscore.js
+                var _now = Date.now || function () { return new Date().getTime(); },
+                    context, args, result, timeout = null, previous = 0;
+                var later = function () {
+                    previous = _now();
+                    timeout = null;
+                    result = func.apply(context, args);
+                    if (!timeout) context = args = null;
+                };
+                return function () {
+                    var now = _now(), remaining = wait - (now - previous);
+                    context = this;
+                    args = arguments;
+                    if (remaining <= 0 || remaining > wait) {
+                        if (timeout) {
+                            clearTimeout(timeout);
+                            timeout = null;
+                        }
+                        previous = now;
+                        result = func.apply(context, args);
+                        if (!timeout) context = args = null;
+                    } else if (!timeout && options.trailing !== false) {
+                        timeout = setTimeout(later, remaining);
+                    }
+                    return result;
+                };
+            }
+
+
+        })();
+    </script>
+
+
+
+
+
+</head>
+
+<body>
+
+    <section class="hero has-background-danger-light">
+        <div class="hero-body">
+            <h1 class="title is-1">
+                </span>Book lending at Paris's Famous Shakespeare & Co. Bookstore</h1>
+            <p class="subtitle is-4">📚 The famous bookstore served as a lending library for 22 years. Which books were borrowed the most?</p>
+        </div>
+    </section>
+
+
+    <div class="container">
+        <section class="section">
+            <div class="columns is-multiline is-mobile content">
+                <div class="column is-full">
+                    
+
+                
+
+                    
+
+                    </div>
+        </section>
+
+
+
+    </div>
+
+
+
+
+
+
+    </div>
+    </div>
+    </section>
+    </div>
